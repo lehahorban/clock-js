@@ -18,6 +18,7 @@ let minute = 00;
 let second = 00;
 let milisecond = 00;
 let interval;
+let counter = 0;
 
 // Listners
 startBtn.addEventListener("click", () => {
@@ -33,16 +34,29 @@ stopBtn.addEventListener("click", () => {
 });
 intervalBtn.addEventListener("click", () => {
   clearInterval(interval);
+  counter += 1;
+  const wrapp = document.createElement("div");
   const block = document.createElement("div");
-  block.innerText = `Time: ${hour}: ${minute}: ${second}: ${milisecond}`;
+  const block2 = document.createElement("div");
+  let text = `Time ${counter}:`;
+  let textResult = `${hour > 23 ? hour : "0" + hour}: ${
+    minute > 9 ? minute : "0" + minute
+  }: ${second > 9 ? second : "0" + second}: ${
+    milisecond > 9 ? milisecond : "0" + milisecond
+  }`;
+  block.innerText = text;
+  block2.innerText = textResult;
   block.classList.add("block");
-  timerResult.append(block);
+  wrapp.classList.add("wrapp");
+  wrapp.append(block, block2);
+  timerResult.append(wrapp);
   clearFields();
   clearInterval(interval);
   interval = setInterval(startTimer, 10);
 });
 resultResetBtn.addEventListener("click", () => {
   timerResult.innerText = "";
+  counter = 0;
 });
 
 function startTimer() {

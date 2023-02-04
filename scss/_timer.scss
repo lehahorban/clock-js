@@ -4,7 +4,7 @@ $mainColor2: #1059b8;
 .container_timer {
   width: 60%;
   height: 100%;
-  margin: 0 auto;
+  margin-right: 40px;
 }
 
 .timer {
@@ -91,25 +91,25 @@ $mainColor2: #1059b8;
   background-color: $mainColor2;
   padding: 5px;
   border-radius: 5px;
-  &:hover {
-    background-color: #fff;
-    transition: 0.3s ease-in-out;
-    .results_title {
-      color: #1059b8;
-      transition: 0.3s ease-in-out;
-    }
-  }
+  // &:hover {
+  //   background-color: #fff;
+  //   transition: 0.3s ease-in-out;
+  //   .results_title {
+  //     color: #1059b8;
+  //     transition: 0.3s ease-in-out;
+  //   }
+  // }
   &:hover {
     .btn_interval {
       color: #1059b8;
     }
   }
-  &:hover {
-    .block {
-      color: #2987be;
-      transition: 0.3s ease-in-out;
-    }
-  }
+  // &:hover {
+  //   .block {
+  //     color: #2987be;
+  //     transition: 0.3s ease-in-out;
+  //   }
+  // }
 }
 
 .results_title {
@@ -119,6 +119,12 @@ $mainColor2: #1059b8;
 .result {
   color: rgb(255, 255, 255);
   font-size: 14px;
+}
+
+.wrapp {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .result_reset {
@@ -141,5 +147,9 @@ $mainColor2: #1059b8;
 
 .block {
   color: rgb(214, 191, 191);
-  padding-top: 5px;
+}
+
+.textResult {
+  margin-left: auto;
+  color: aqua;
 }

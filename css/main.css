@@ -119,7 +119,7 @@ body {
 .container_timer {
   width: 60%;
   height: 100%;
-  margin: 0 auto;
+  margin-right: 40px;
 }
 
 .timer {
@@ -207,20 +207,8 @@ body {
   padding: 5px;
   border-radius: 5px;
 }
-.results_block:hover {
-  background-color: #fff;
-  transition: 0.3s ease-in-out;
-}
-.results_block:hover .results_title {
-  color: #1059b8;
-  transition: 0.3s ease-in-out;
-}
 .results_block:hover .btn_interval {
   color: #1059b8;
-}
-.results_block:hover .block {
-  color: #2987be;
-  transition: 0.3s ease-in-out;
 }
 
 .results_title {
@@ -230,6 +218,12 @@ body {
 .result {
   color: rgb(255, 255, 255);
   font-size: 14px;
+}
+
+.wrapp {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .result_reset {
@@ -252,5 +246,9 @@ body {
 
 .block {
   color: rgb(214, 191, 191);
-  padding-top: 5px;
+}
+
+.textResult {
+  margin-left: auto;
+  color: aqua;
 }/*# sourceMappingURL=main.css.map */
