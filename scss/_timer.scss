@@ -83,33 +83,17 @@ $mainColor2: #1059b8;
 }
 
 .results_block {
-  // display: flex;
-  // flex-direction: column;
   margin-top: 40px;
   width: 150px;
   border: 1px solid $mainColor1;
   background-color: $mainColor2;
   padding: 5px;
   border-radius: 5px;
-  // &:hover {
-  //   background-color: #fff;
-  //   transition: 0.3s ease-in-out;
-  //   .results_title {
-  //     color: #1059b8;
-  //     transition: 0.3s ease-in-out;
-  //   }
-  // }
   &:hover {
     .btn_interval {
       color: #1059b8;
     }
   }
-  // &:hover {
-  //   .block {
-  //     color: #2987be;
-  //     transition: 0.3s ease-in-out;
-  //   }
-  // }
 }
 
 .results_title {
