@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="container_timer">
+      <div class="timer">
+        <div class="timer_block">
+          <p class="time timer_hour">00</p>
+          <p class="title">Hours</p>
+        </div>
+        <div class="timer_block">
+          <p class="time timer_minute">00</p>
+          <p class="title">Minutes</p>
+        </div>
+        <div class="timer_block">
+          <p class="time timer_second">00</p>
+          <p class="title">Seconds</p>
+        </div>
+        <div class="timer_block">
+          <p class="time timer_milisecond">00</p>
+          <p class="title">Miliseconds</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn btn_start">Start</button>
+        <button class="btn btn_pause">Pause</button>
+        <button class="btn btn_stop">Stop</button>
+        <button class="btn btn_interval">Interval</button>
+      </div>
+
+      <div class="wrapp_result">
+        <div class="results_block">
+        <p class="results_title">Result</p>
+        <div class="result"></div>            
+      </div>
+      <button class="result_reset">Reset result</button>   
+      </div>
+      </div>
+    </div>
+
+    <script src="./js/timer.js"></script>
+  </body>
+</html>

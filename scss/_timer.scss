@@ -1,0 +1,139 @@
+$mainColor1: #2987be;
+$mainColor2: #1059b8;
+
+.container_timer {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &_block {
+    width: 150px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    .time {
+      background-color: $mainColor1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: fff;
+      height: 150px;
+      font-size: 95px;
+    }
+    .title {
+      background-color: $mainColor2;
+      padding: 5px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 70px;
+
+  .btn {
+    border: none;
+    border-radius: 10px;
+    font-size: 18;
+    padding: 10px;
+    width: 180px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .btn_start,
+  .btn_stop,
+  .btn_interval,
+  .result_reset,
+  .results_block {
+    color: $mainColor1;
+    &:hover {
+      background-color: $mainColor2;
+      color: #fff;
+    }
+  }
+  .btn_pause {
+    background-color: rgb(204, 0, 255);
+    &:hover {
+      background-color: rgb(103, 2, 112);
+    }
+  }
+}
+
+.wrapp_result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results_block {
+  // display: flex;
+  // flex-direction: column;
+  margin-top: 40px;
+  width: 150px;
+  border: 1px solid $mainColor1;
+  background-color: $mainColor2;
+  padding: 5px;
+  border-radius: 5px;
+  &:hover {
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+    .results_title {
+      color: #1059b8;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  &:hover {
+    .btn_interval {
+      color: #1059b8;
+    }
+  }
+  &:hover {
+    .block {
+      color: #2987be;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.results_title {
+  color: #fff;
+}
+
+.result {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+.result_reset {
+  margin-top: 40px;
+  width: 150px;
+  height: 28px;
+  border: 1px solid $mainColor1;
+  background-color: $mainColor2;
+  padding: 5px;
+  border-radius: 5px;
+  &:hover {
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+    .results_title {
+      color: #1059b8;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.block {
+  color: rgb(214, 191, 191);
+}
