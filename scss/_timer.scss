@@ -35,6 +35,10 @@ $mainColor2: #1059b8;
   }
 }
 
+.time {
+  color: rgb(245, 241, 241);
+}
+
 .buttons {
   display: flex;
   justify-content: space-between;
@@ -68,6 +72,7 @@ $mainColor2: #1059b8;
     background-color: rgb(204, 0, 255);
     &:hover {
       background-color: rgb(103, 2, 112);
+      color: #fff;
     }
   }
 }
@@ -136,4 +141,5 @@ $mainColor2: #1059b8;
 
 .block {
   color: rgb(214, 191, 191);
+  padding-top: 5px;
 }

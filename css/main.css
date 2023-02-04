@@ -150,6 +150,10 @@ body {
   color: #fff;
 }
 
+.time {
+  color: rgb(245, 241, 241);
+}
+
 .buttons {
   display: flex;
   justify-content: space-between;
@@ -187,6 +191,7 @@ body {
 }
 .buttons .btn_pause:hover {
   background-color: rgb(103, 2, 112);
+  color: #fff;
 }
 
 .wrapp_result {
@@ -247,4 +252,5 @@ body {
 
 .block {
   color: rgb(214, 191, 191);
+  padding-top: 5px;
 }/*# sourceMappingURL=main.css.map */
