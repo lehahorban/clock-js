@@ -10,5 +10,10 @@ body {
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background: #091921;
+  background: linear-gradient(
+    90deg,
+    rgba(31, 21, 21, 1) 0%,
+    rgba(24, 9, 121, 0.835171568627451) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
