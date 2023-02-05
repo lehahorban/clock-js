@@ -13,7 +13,7 @@ body {
   background: linear-gradient(90deg, rgb(31, 21, 21) 0%, rgba(24, 9, 121, 0.8351715686) 100%, rgb(0, 212, 255) 100%);
 }
 
-.container {
+.container_clock {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,6 +200,7 @@ body {
 }
 
 .results_block {
+  position: absolute;
   margin-top: 40px;
   width: 150px;
   border: 1px solid #2987be;
@@ -227,6 +228,7 @@ body {
 }
 
 .result_reset {
+  margin-left: auto;
   margin-top: 40px;
   width: 150px;
   height: 28px;
